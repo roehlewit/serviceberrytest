@@ -1,0 +1,65 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="" autocomplete="on">
+			<label for="firstName">First Name</label>
+			<input
+				type="text"
+				name="firstName"
+				id="firstName"
+				required
+				autofocus
+			/>
+			
+				<label for="lastName">Last Name</label>
+			<input
+				type="text"
+				name="lastName"
+				id="lastName"
+				required
+			/>
+			
+			<label for="email"
+				><i class="fa far fa-envelope"> Email</i></label
+			>
+			<input type="email" name="email" id="email" required />
+			<label for="phone">Phone</label>
+			<input
+				type="tel"
+				name="phone"
+				id="phone"
+				placeholder="xxx-xxx-xxxx"
+				required
+			/>
+			<label for="date">Date of Event</label>
+			<input type="date" name="date" id="date" required />
+			<label for="typeEvent"
+				>Type of Event</label
+			>
+			<select name="typeEvent" id="typeEvent" class="typeEvent" multiple>
+				<option class="eventOption"value="Birthday">Birthday</option>
+				<option class="eventOption" value="Wedding">Wedding</option>
+				<option class="eventOption" value="Drop Off">Drop Off</option>
+				<option class="eventOption" value="Buffet Dinner">Buffet Dinner</option>
+			</select>
+
+			<input type="submit" value="submit" id="submit" />
+		</form>
+
+		<script defer src="app.js"></script>
+	</body>
+</html>
